@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+.main-container{
+	display: flex;
+	height: 100vh;
+	width: 100hw;
+	background: rgba(124, 247, 243, 0.66);
+	justify-content: center;
+	align-items: center;
+}
+.hover-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 450px;
+	width: 450px;
+	background: rgba(145, 251, 20, 1.0);
+	overflow: hidden;
+	position: relative;
+}
+.sub-container{
+	margin: auto;
+	height: 350px;
+	width: 350px;
+	background: rgba(14, 251, 214, 1.0);
+	box-shadow: 1px 1px 5px 3px grey;
+	transition: 2s ease;
+}
+
+.hover-container::before{
+	content: "";
+	height: 350px;
+	width: 350px;
+	background: rgba(14, 251, 4, 1.0);
+	transform: rotateX(180deg) skew(10deg) translateX(40px) translateY(-400px) scale(1.2);
+	position: absolute;
+	transition: 1s ease;
+}
+
+.hover-container:hover {
+	cursor: pointer;
+
+}
+
+
+
+.hover-container:hover .sub-container{
+	
+	transform: rotateX(180deg) skew(10deg) translateX(40px) translateY(-400px) scale(1.2);
+	/*transform: translate3d(10px, 10px,200px);*/
+	/*transform: rotate3d(1.3, 0, 1.5, -90deg) translate3d(0px, 10px,20px);*/
+
+}
+.hover-container:hover::before{
+	transform: rotateX(360deg) skew(0deg) translateX(0px) translateY(0px) scale(1);
+}
+

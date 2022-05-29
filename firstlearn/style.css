@@ -1,0 +1,62 @@
+
+nav.static{
+	position: static;
+	padding: 150px;
+	background-color: green;
+	margin-top:50px; 
+}
+
+.relativeinstatic{
+	position: relative;
+	padding: 10px;
+	background-color: blue;
+	margin-top: 150px;
+}
+.static{
+	position: static;
+	margin-top: 100px;
+	background-color: lavender;
+}
+
+.firstdiv{
+	position: relative;
+	min-height: 150px;
+	background-color: red;
+	margin-top: 50px;
+	padding: 50px;
+	margin-bottom: 10px;
+	top: 50;
+}
+
+.fixed{
+	position: fixed;
+	/*margin-top: 150px;*/
+	background-color: blueviolet;
+	top: 50%;
+	left: 50%;
+	padding: 5%;
+}
+.fixed-viewport{
+	position: fixed;
+	top: 10%;
+	left: 18%;
+	background-color: indianred;
+	padding: 10px;
+}
+.absolute{
+	position: absolute;
+	background-color: darkred;
+	padding: 10px;
+	top: 0;
+	left: 50%;
+}
+
+.sticky{
+	position: -webkit-sticky;
+	top: 20%;
+	position: sticky;
+	height: 40px;
+	padding: 15px;
+	background-color: aliceblue;
+	z-index: 2;
+}

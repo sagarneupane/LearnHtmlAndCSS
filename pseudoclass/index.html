@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Class</title>
+	<style type="text/css">
+		
+		a:link{
+			color: #aeebb1;
+		}
+		a:visited{
+			color:red;
+
+			color: ;
+			
+		}
+	/*	a:hover{
+			color: black;
+			background-color: white;
+		}
+		a:active{
+			color: deeppink;
+		}*/
+
+		p{
+			display: none;
+			padding: 10px;
+			background-color: deeppink;
+		}
+		div:hover p{
+			display: block;
+		}
+		div{
+			margin-top: 20px;
+		}
+		p:first-child{
+			background-color: greenyellow;
+		}
+		p span:first-child{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+
+	<a href="">I am Unvisited Link </a>
+	<br>
+	<div>
+		Hover over me and See Magic
+		<p><span>Hello</span> <span>Ta Da I am The magic</span></p>
+		<p><span>Hello I</span> am Second Child</p>
+	</div>
+</body>
+</html>

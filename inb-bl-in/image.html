@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image</title>
+	<style type="text/css">
+		.image{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.center-div{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border:2px solid deeppink;
+			/*height: 40%;*/
+			text-align: center;
+			padding: 80px;
+			margin-top: 10px;
+		}
+		
+		.center-using-position{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			
+		}
+		.position-div{
+			position: relative;
+			height: 250px;
+			width: 250px;
+			background-color: black;
+			color: white;
+
+		}
+		.flex{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			width:600px;
+			background-color: deeppink;
+		}
+
+	</style>
+</head>
+<body>
+		<p>To center an image set it to block and margin-left:auto and margin-right:auto</p>
+		<img src="https://th.bing.com/th/id/OIP.hb8061b9VazFo5euVw-SPAAAAA?pid=ImgDet&rs=1" class="image">
+
+		<div class="center-div">
+			Hello I am div please Center me
+		</div>
+		<div class="position-div">
+			<h1  class="center-using-position">Hello I will be centered using position
+				<h1>
+		</div>
+		<div class="flex">
+			<h1>Using Flexbox to center elemetns</h1>
+		</div>
+</body>
+</html>

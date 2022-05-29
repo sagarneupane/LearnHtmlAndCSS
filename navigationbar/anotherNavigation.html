@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bibek Bhusal</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			/*box-sizing: border-box;*/
+		}
+		.header{
+			border: 2px solid deeppink;
+			display: flex;
+			background-color: deeppink;
+			justify-content: space-around;
+			/*height: 10%;
+			width: 100hw;*/
+		}
+		.logo{
+			/*margin: 10px;*/
+			padding: 10px;
+			/*border: 3px solid grey;*/
+			height: 100%;
+			width: 350px;
+			line-height:150px;
+			/*background-color: #fabfe6;*/
+			text-align: center;
+			font-weight:bolder;
+			font-size: 5rem;
+			letter-spacing:1.2rem;
+			/*text-shadow: 2px 2px #140d11;*/
+			font-family: 'Tapestry', cursive;
+			color:#036a19;
+
+		}
+		.contact-header{
+			margin: 10px;
+			line-height: 100px;
+			font-size: 2rem;
+			padding: 30px;
+			text-align: center;
+			/*border: 3px solid grey;*/
+			/*height: 100px;
+			width: 350px;*/
+
+		}
+		.contactdetails{
+			text-align: center;
+			font-size: 1rem;	
+			margin-top: 5px;
+			padding: 5px;	
+		}
+		.endbar{
+			line-height: 100px;
+			
+		}
+		.navbar{
+			background-color: #1df552;
+
+		}
+		.navbar nav ul{
+			display: flex;
+			list-style: none;
+			justify-content: space-around;
+			padding: 10px;
+		}
+		.navbar nav ul li{
+			list-style-type: none;
+			background-color: #43fa70;
+			padding: 10px;
+			
+		}
+		.navbar nav ul li a{
+			text-decoration: none;
+			font-size: 2rem;
+			color: white;
+			font-variant: small-caps;
+
+		}
+		.dropdown{
+			display: none;
+		}
+		.navbar nav ul li:hover{
+			background-color:#04fa41;
+			animation-name: myAnimation;
+			animation-duration: 5s;
+
+		}
+		.displayDropdown:hover{
+			background-color: red;
+		}
+		/*.dropdown{
+			display: inline-block;
+			background-color: yellow;
+			font-size: 2rem;
+		}*/
+		@keyframes myAnimation{
+			0%{
+				background-color: #044314;
+			}
+			50%{
+				background-color: #5d8b1a;
+
+			}
+			100%{
+				background-color: #f7662e;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- Start of Header -->
+	<div class="header">
+			<div class="logo">BIBEK</div>
+			<div class="contact">
+				<span class="contact-header">Contact us:</span><br>
+				<span class="contactdetails">Contactnumber:9842554784</span><br>
+				<span class="contactdetails">Email:Bibek Bhusal@1230com</span><br>
+			</div>
+			<div class="endbar">
+				Contact Me
+			</div>
+	</div>
+	<!-- End of header -->
+
+	<!-- NavBar Starting  -->
+	<div class="navbar">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="displayDropdown"><a href="#">About Us</a></li>
+				<div class="dropdown">
+					<ul>
+						<li>Home</li>
+						<li>Home</li>
+						<li>Home</li>
+					</ul>
+				</div>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- End of Navbar -->
+
+	<div class="carasoul">
+			
+	</div>
+</body>
+</html>

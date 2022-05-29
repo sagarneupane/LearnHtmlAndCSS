@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Elements</title>
+	<style type="text/css">
+		::selection{
+			/*It is the most important Pseudo Elements*/
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		p{
+			width: 100hw;
+			background-color: deeppink;
+			color: white;
+			padding: 50px;
+		}
+		p::first-line{
+			font-variant: small-caps;
+			font-size: 50px;
+		}
+		p::first-letter{
+			text-transform: uppercase;
+			font-size: 150px;
+		}
+		p::after{
+			content: "I am after paragraph pseudo element";
+			font-size: 25px;
+
+		}
+		p::before{
+			content: "I am before paragraph Pseudo elemenet";
+			font-variant: small-caps;
+			font-size: 100px;
+		}
+		img{
+			height: 150px;
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+<h1>Pseudo elements are used to style specific parts of the html elements</h1>
+
+<p>Hello I am Sagar Neupane How are you? I live on kohalpur-12 banke nepal. I am learning CSS
+HTML and Python For web development and i love to write codes I am a over thinker. I want to achieve a lot of things in my life but i am not able to achieve those because I am lazy. But from now onwards i will not be lazy</p>
+
+</body>
+</html>

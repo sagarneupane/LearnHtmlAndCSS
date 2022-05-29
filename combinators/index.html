@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Combinator</title>
+	<style type="text/css">
+		div p{
+			background-color: deeppink;
+			padding: 20px;
+		}
+		div > p{
+			background-color: yellow;
+			padding: 20px;
+		}
+		div ~ p{
+			background-color: red;
+			padding: 20px;
+		}
+		div + p{
+			background-color: black;
+			color: white;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<p> Starting Outside Div Paragaraph</p>
+	<div>
+		<p>Inside Div Paragraph div > p {}</p>
+		<p>Inside Div Paragraph div > p{}</p>
+		<p>Inside Div Paragraph div > p{}</p>
+		<section>
+			<p>Inside Section which is inside div I am not child of div</p>
+		</section>
+		<p>Inside Div Paragraph div > p{}</p>
+	</div>
+	<p>Exactly After i am sibling of div Outside Div Paragraph first div + p{}</p>
+	<p>I am Sibling but not exact after div Outside Div Paragraph Second div ~ p{}</p>
+	<p>I am Sibling but not exact after div Outside Div Paragraph Third div ~ p{}</p>
+	<p>I am Sibling but not exact after div Outside Div Paragraph fourth div ~ p{}</p>
+</body>
+</html>

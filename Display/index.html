@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display Block,None,inline</title>
+	<style type="text/css">
+		
+		.main{
+
+			background-color: coral;
+		}
+		h3{
+			background-color: yellow;
+			display: inline;
+		}
+		span{
+			display: block;
+			background-color:deeppink;
+		}
+		h2{
+			display: none;
+			background-color: greenyellow;
+			transition: 0.5s ease;
+		}
+		.main:hover h2{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor <h3>Hello Everyone By default i am display:block but i have been changed to display:inline</h3>in
+		<h2>Hi everyone :: i am display:block but i have been changed to display:none but after hover my display go changed into block again. Display Inline only hides the contents of elements not the whole element.</h2> reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. <span> By Default i am display:inline but i have been changed to display:block</span> sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Bar</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			position: sticky;
+			top: 0;
+			left: 0;
+			background-color: deeppink;
+			height: 100vh;
+			width: 15%;
+		}
+		div ul{
+			
+			list-style-type: none;
+			
+		}
+		li{
+			display: block;
+			list-style: none;
+			font-size: 20px;
+			padding: 8px 16px;
+			
+			
+		}
+		li.active{
+			background-color: green;
+			color: white;
+			font-variant: small-caps;
+		}
+		li:hover:not(.active){
+			background-color:darkred;
+			color: white;
+			font-variant: small-caps;
+		}
+	</style>
+</head>
+<body>
+		<div>
+			<ul>
+				<li class="active">Home</li>
+				<li>About</li>
+				<li>Contact</li>
+				<li>Gallery</li>
+				<li>Career</li>
+			</ul>
+		</div>
+</body>
+</html>

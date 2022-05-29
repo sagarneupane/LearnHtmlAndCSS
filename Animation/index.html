@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Animation</title>
+	<style type="text/css">
+		.main{
+			height: 600px;
+			width: 600px;
+			border: 2px solid grey;
+			margin: auto;
+			position: relative;
+		}
+
+		.box{
+			height: 150px;
+			width: 150px;
+			background-color: red;
+			animation: animatebox 2s 5;
+			animation-delay: 1s;
+			animation-timing-function: ease;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		@keyframes animatebox{
+			0%{
+				top: 0;
+				left: 0;
+				border-radius: 0% 0% 0% 0%;
+			}
+			25%{
+				top: 0;
+				left: 450px;
+				border-radius: 0% 25% 25% 0%;
+				background-color: greenyellow;
+			}
+			50%{
+				top: 450px;
+				left: 450px;
+				border-radius: 25% 0 0 25%;
+				background-color: yellow;
+			}
+			75%{
+				top: 450px;
+				left: 0;
+				border-radius: 50% 0 0 50%;
+				background-color: coral;
+			}
+			100%{
+				top: 0;
+				left: 0;
+				border-radius:0% 0% 0% 0%;
+				background-color: chocolate;
+
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div class="main">
+	<div class="box">
+		
+	</div>
+</div>
+
+</body>
+</html>
